@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import ElementBar from "@/components/ElementBar";
-import { luckyFromElements } from "@/lib/saju";
-
+import ElementBar from "../../components/ElementBar";
+import { luckyFromElements } from "../../lib/saju";
 type Elements = { wood: number; fire: number; earth: number; metal: number; water: number };
 
 export default function ResultPage() {
