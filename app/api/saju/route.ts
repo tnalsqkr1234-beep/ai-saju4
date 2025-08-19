@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { computeSaju } from "@/lib/saju";
+import { computeSaju } from "../../../lib/saju";
 
 export async function POST(req: NextRequest) {
   const body = await req.text();
