@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import { questions, scoreMBTI } from "@/lib/mbti";
+import { questions, scoreMBTI } from "../../lib/mbti";
 
 export default function MBTIPage() {
   const [answers, setAnswers] = useState<Record<string, number>>({});
