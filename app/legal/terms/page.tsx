@@ -1,0 +1,1 @@
+export default function Terms(){ return (<div className='card'><div className='section-title'>이용약관</div><p className='small'>본 서비스는 오락/참고용이며, 건강/법률/투자 등 중대한 결정의 근거가 될 수 없습니다.</p><p className='small mt-2'>구독/데이터 처리 및 책임 한계, 환불/해지 정책 등은 추후 업데이트될 수 있습니다.</p></div>); }

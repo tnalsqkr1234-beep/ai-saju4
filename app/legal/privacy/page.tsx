@@ -1,0 +1,1 @@
+export default function Privacy(){ return (<div className='card'><div className='section-title'>개인정보 처리방침</div><p className='small'>이메일, 출생정보, MBTI 유형 등 최소 정보를 수집하여 운세 제공 목적으로만 사용합니다.</p><p className='small mt-2'>데이터는 Vercel KV에 저장될 수 있으며, 삭제/열람 요청은 이메일 회신으로 전달해주세요.</p></div>); }

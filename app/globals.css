@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --bg:#0b0b10; --fg:#f4f6f9; --muted:#a2a8b4; --primary:#7c5cff; --card:#15151d; }
+html,body{background:var(--bg); color:var(--fg);}
+.container-max{ max-width: 64rem; margin: 0 auto; padding: 0 1rem; }
+.card{ background: var(--card); border-radius: 1rem; padding: 1.5rem; box-shadow: 0 10px 25px rgba(0,0,0,.08); border: 1px solid rgba(255,255,255,.05); }
+.btn{ display:inline-flex; align-items:center; justify-content:center; border-radius: .75rem; padding: .5rem 1rem; font-weight:500; background: var(--primary); color:white; transition:.2s; }
+.btn:hover{ opacity:.9 }
+.input{ width:100%; background: rgba(0,0,0,.2); border: 1px solid rgba(255,255,255,.1); border-radius: .75rem; padding:.5rem .75rem; outline:none }
+.label{ font-size:.875rem; color: var(--muted); margin-bottom:.25rem; display:block }
+.section-title{ font-size:1.25rem; font-weight:600; margin-bottom:.75rem }
+.subtle{ color: var(--muted); }
+.small{ font-size:.875rem; color: var(--muted); }
+.grid-2{ display:grid; grid-template-columns: 1fr; gap:1rem }
+@media (min-width: 768px){ .grid-2{ grid-template-columns: 1fr 1fr } }
