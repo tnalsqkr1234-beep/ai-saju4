@@ -6,7 +6,7 @@ import { composeDaily } from '../../../../lib/fortune';
 import { renderDailyHTML } from '../../../../lib/html';
 export const runtime = 'nodejs';
 export async function GET(req:NextRequest){
-  const emails = await kv.smembers<string>('subs');
+  const emails = await kv.smembers<string[]>('subs');
   let sent=0;
   for(const email of emails){
     const data = await kv.hgetall<{email:string; mbti:string; date:string; time:string; place?:string; gender?:string}>(`sub:${email}`);
